@@ -22,9 +22,9 @@ get("/square_root/results")do
 end
 
 get("/payment/new")do
-erb(:payment)
+  erb(:payment)
 end
 
 get("/random/new")do
-erb(:random)
+  erb(:random)
 end
