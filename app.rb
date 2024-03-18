@@ -28,3 +28,9 @@ end
 get("/random/new")do
   erb(:random)
 end
+
+get("/payment/results")do
+end
+get("/random/results")do
+end
+
