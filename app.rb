@@ -30,7 +30,8 @@ get("/random/new")do
 end
 
 get("/payment/results")do
+  erb(:payment_results)
 end
 get("/random/results")do
+  erb(:random_results)
 end
-
