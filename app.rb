@@ -2,7 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  erb(:homepage)
+  erb(:square_new)
 end
 
 get("/square/new") do
