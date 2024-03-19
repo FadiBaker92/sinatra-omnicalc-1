@@ -35,7 +35,7 @@ get("/payment/results")do
   @num_years = params.fetch("num_of_years").to_i
   @rate = @user_apr / 100
   @monthly_rate = @rate / 12
-  @num_of_periods = @num_years.to_f / 12
+  @num_of_periods = @num_years.to_f * 12
   @numerator = @monthly_rate * @present_value
   @denominator = 1 - ((1 + @monthly_rate) ** (-@num_of_periods))
   erb(:payment_results)
