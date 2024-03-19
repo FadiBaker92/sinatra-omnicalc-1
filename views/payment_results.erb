@@ -1,7 +1,6 @@
  <h1>
   Payment Results
 </h1>
-  <%= params %>
 <dl>
   <dt>
     APR
@@ -28,7 +27,7 @@
     Payment
   </dt>
   <dd>
-    <%=  @denominator   %>
+    <%=  (@numerator / @denominator).round(2).to_fs(:currency)  %>
   </dd>
 </dl>
 

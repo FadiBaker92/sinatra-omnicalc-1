@@ -37,7 +37,7 @@ get("/payment/results")do
   @monthly_rate = @rate / 12
   @num_of_periods = @num_years.to_f * 12
   @numerator = @monthly_rate * @present_value
-  @denominator = 1 - ((1 + @monthly_rate) ** (-@num_of_periods))
+  @denominator = 1 - ((1 + @monthly_rate) ** -@num_of_periods)
   erb(:payment_results)
 end
 get("/random/results")do
